@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Table Booking</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="shortcut icon" href="imags/frok and knife.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="booking-bg">
+        <h1 class="booking">Reservation<span> Form</span></h1>
+        <form id="bookingForm" onsubmit="form_valid()">
+            <div class="form-group">
+                <div class="booking-control">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="fname" placeholder="First Name">
+                    <input type="text" name="name" id="lname" placeholder="Last Name">
+                    <span id="nlname"></span>
+                </div>
+                <div class="booking-control">
+                    <label for="phn">Mobile Number</label>
+                    <select name="numcode" id="numcode">
+                        <option value="">+880</option>
+                        <option value="">+91</option>
+                    </select>
+                    <input type="tel" name="phn" id="phn" placeholder="123456789">
+                    <span id="nphn"></span>
+                </div>
+                <div class="booking-control">
+                    <label for="email">E-Mail</label>
+                    <input type="email" name="email" id="email" placeholder="youremail@yahoo.com">
+                    <span id="nemail"></span>
+                </div>
+                <div class="booking-control">
+                    <label for="date">Reservation Date</label>
+                    <input type="date" id="date" name="date">
+                    <span id="ndate"></span>
+                </div>
+                <div class="booking-control">
+                    <label for="time">Reservation Time</label>
+                    <input type="time" id="time" name="time">
+                    <span id="ntime"></span>
+                </div>
+                <div class="booking-control">
+                    <label for="noofperson">Number of Attendee</label>
+                    <input type="text" name="noofperson" id="noofperson" placeholder="How many person will be with you?">
+                    <span id="nnoofperson"></span>
+                </div>
+                <div class="booking-control">
+                    <label for="note">Special Notes</label>
+                    <input type="text" name="note" id="note">
+                </div>
+                <div>
+                    <button type="submit" class="btn-submit" >Submit</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="./booking.js"></script>
+</body>
+
+</html>
